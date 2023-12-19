@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8" />
+    <title>Trivia Quiz</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="manifest" href="site.webmanifest" />
+    <link rel="apple-touch-icon" href="icon.png" />
+    <!-- Place favicon.ico in the root directory -->
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <meta name="theme-color" content="#fafafa" />
+  </head>
+
+  <body>
+    <!-- WebApp -->
+
+    <div class="container">
+      <div id="name">TRIVIA QUIZ</div>
+      <div class="swatch">
+        <div id="1"></div>
+        <div id="2"></div>
+        <div id="3"></div>
+        <div id="4"></div>
+        <div id="5"></div>
+        <div id="6"></div>
+      </div>
+      <div id="category"></div>
+      <div id="question"></div>
+      <div id="output"></div>
+      <div id="buttonContainer">
+        <button id="button">Start the quiz!</button>
+      </div>
+    </div>
+
+    <!-- WebApp -->
+    <script src="js/vendor/modernizr-3.7.1.min.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-3.4.0.min.js"
+      integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="
+      crossorigin="anonymous"
+    ></script>
+    <script>
+      window.jQuery ||
+        document.write(
+          '<script src="js/vendor/jquery-3.4.0.min.js"><\/script>'
+        );
+    </script>
+    <script src="js/plugins.js"></script>
+
+    <script
+      data-main="js/app/main"
+      src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.3.6/require.js"
+    ></script>
+  </body>
+</html>
