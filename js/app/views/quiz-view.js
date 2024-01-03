@@ -62,7 +62,7 @@ define(function () {
 
   internals.showCategory = function (question) {
     console.log(question.category);
-    const category = "<div>" +
+    const category = "<div class='category'>" +
       "<p><h2>Category: " +
       question.category +
       "</h2></p>" +
