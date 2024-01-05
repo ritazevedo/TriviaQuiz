@@ -388,7 +388,7 @@ body {
   width: 40%;
   border-radius: 6px;
   overflow: hidden;
-  top: 23%;
+  top: 28%;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -404,7 +404,7 @@ progress {
 
 .progress {
   position: fixed;
-  top: 25%;
+  top: 30%;
   width: 40%;
   display: flex;
   left: 60%;
@@ -417,13 +417,12 @@ progress {
 
 .category {
   position: fixed;
-  top: 30%;
+  top: 32%;
   width: 50%;
   display: flex;
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  align-items: center;
   justify-content: center;
 }
 
@@ -435,7 +434,15 @@ progress {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  align-items: center;
+  justify-content: center;
+}
+
+.correctAnswers {
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
   justify-content: center;
 }
 
@@ -452,14 +459,14 @@ progress {
 
   #progressBar {
     width: 60%;
-    top: 19%;
+    top: 22%;
   }
 
   .progress {
     font-size: 0.7rem;
     left: 40%;
     transform: translateX(-40%);
-    top: 22%;
+    top: 24%;
   }
 
   .category {
@@ -476,17 +483,22 @@ progress {
 
   .answers {
     top: 10rem;
-  } 
+  }
 
   .option {
     width: 60%;
     font-size: 0.7rem;
     height: 2rem;
   }
-  
+
   #output {
     top: 62%;
     font-size: 0.8rem;
   }
 
+  .correctAnswers {
+    top: 17%;
+    font-size: 0.6rem;
+    width: 80%;
+  }
 }

@@ -39,9 +39,7 @@ define(function () {
   };
 
   internals.updateProgress = function (currentIndex, totalQuestions) {
-    console.log(currentIndex, totalQuestions);
     const progress = (currentIndex / totalQuestions) * 100;
-    console.log(progress);
     $("#progress-container").css({
       "width": `${progress}%`, "background": "white",
     });
@@ -61,7 +59,6 @@ define(function () {
   };
 
   internals.showCategory = function (question) {
-    console.log(question.category);
     const category = "<div class='category'>" +
       "<p><h2>Category: " +
       question.category +
@@ -71,9 +68,21 @@ define(function () {
     return category;
   };
 
+  internals.showNumberOfCorrectAnswers = function () {
+    $(".correctAnswers").empty();
+    var number = "<div class='correctAnswers'>" +
+      "<p><h2>Number of Correct Answers: " +
+      numberOfCorrectAnswers +
+      "</h2></p>" +
+      "</div>"
+    $("#category").append(number);
+    return number;
+  };
+
 
   internals.renderQuestion = function (question) {
     const questionHtml = internals.createQuestion(question);
+    internals.showNumberOfCorrectAnswers();
     internals.elements.questionList.html(questionHtml);
   };
 
