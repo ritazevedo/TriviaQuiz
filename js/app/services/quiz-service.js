@@ -12,6 +12,8 @@ define(["views/quiz-view"], function (
     let response = await fetch(internals.getCategoriesUrl());
     let data = await response.json();
 
+    console.log(data);
+
     return data.trivia_categories;
   };
 

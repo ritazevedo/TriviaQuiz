@@ -7,5 +7,9 @@ define(function () {
 
     const externals = {};
 
+    externals.renderStartButton = function () {
+        $('#button').removeAttr('hidden');
+    };
+
     return externals;
 });

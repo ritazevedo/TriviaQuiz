@@ -7,13 +7,17 @@ define(["services/quiz-service"], function (quizService) {
   const externals = {};
 
   internals.routes = {
+    initial: {
+      hash: "#initial",
+      controller: "initial-controller",
+    },
     quiz: {
       hash: "#quiz",
       controller: "quiz-controller",
     },
   };
 
-  internals.defaultRoute = "quiz";
+  internals.defaultRoute = "initial";
   internals.currentHash = "";
 
   externals.start = function () {
